@@ -1,4 +1,4 @@
-# Golden Zaika - Gourmet Food Delivery App
+# Golden Feast – Luxury Food Delivery 
 
 Welcome to **Golden Zaika**, a full-stack food delivery platform offering a smooth ordering experience, admin control, Razorpay integration, AI-powered smart food suggestions, and stylish UI powered by React, Spring Boot, and MongoDB.
 
