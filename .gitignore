@@ -1,0 +1,17 @@
+# === FRONTEND (adminpanel + foodies) ===
+**/node_modules/
+**/.env
+**/.vscode/
+**/build/
+
+# === BACKEND ===
+backend/target/
+backend/.idea/
+backend/.env
+*.iml
+
+# === GLOBAL ===
+.DS_Store
+*.log
+Thumbs.db
+ehthumbs.db
