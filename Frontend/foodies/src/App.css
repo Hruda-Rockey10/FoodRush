@@ -1,0 +1,5 @@
+/* For pushing content below the fixed navbar */
+.content-wrapper {
+  padding-top: 80px; /* adjust based on navbar height */
+}
+

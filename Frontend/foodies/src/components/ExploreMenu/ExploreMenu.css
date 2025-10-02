@@ -1,0 +1,92 @@
+.explore-menu-list {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  /* Hide scrollbars */
+  scrollbar-width: none;
+}
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.food-card {
+  flex: 0 0 auto;
+  width: 180px;
+  scroll-snap-align: start;
+  background: rgba(0, 0, 0, 0.35); /* dark glass */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.food-card p {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+
+.active-card {
+  border: 2px solid #FFD700;
+  background-color: rgba(0, 0, 0, 0.5); /* darker */
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.5);
+  transform: scale(1.05);
+}
+
+
+.food-card:hover {
+  background: rgba(0, 0, 0, 0.4); /* darker on hover */
+  transform: scale(1.02);
+}
+
+
+.food-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+.food-card img:hover {
+  filter: brightness(1);
+}
+
+
+
+
+
+.explore-menu h1,
+.explore-menu p {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.scroll-icon {
+  font-size: 2rem;
+  color: #FFD700; /* warm gold or choose your brand color */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.scroll-icon:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+.explore-menu {
+  margin-top: 4rem; /* Adjust to taste */
+}

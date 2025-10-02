@@ -1,0 +1,71 @@
+.invoice-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #333;
+  padding: 40px;
+  width: 800px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  z-index: -9999;
+  visibility: hidden;
+}
+
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-name {
+  font-size: 24px;
+  color: #000;
+}
+
+.invoice-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.invoice-body h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f8f8f8;
+}
+
+.invoice-totals .line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.invoice-totals .total {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.invoice-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}

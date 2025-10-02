@@ -1,0 +1,107 @@
+.yeti-login-container {
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yeti-form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  color: white;
+  width: 340px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: gold;
+  font-weight: bold;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #f5f5f5;
+}
+
+.inputGroup input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.inputGroup input:focus {
+  border-bottom-color: gold;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.2rem 0;
+}
+
+.btn-signin {
+  flex: 1;
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-signin:hover {
+  background: #007bff;
+  color: white;
+}
+
+.btn-reset {
+  flex: 1;
+  background: transparent;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+  padding: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-reset:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.account-msg {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.account-msg a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.account-msg a:hover {
+  text-decoration: underline;
+}

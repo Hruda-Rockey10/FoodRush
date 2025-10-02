@@ -1,0 +1,55 @@
+.header-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* 👈 align content to the left */
+  padding: 6rem 4rem 2rem 6rem; /* 👈 top padding pushes below Menubar, left pushes text right a bit */
+  color: white;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+.glass-content-card {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.glass-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(240, 6, 6, 0.6);
+  color: #fff;
+}
+
+.glass-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(193, 16, 16, 0.5);
+}
+
+.glass-button {
+  align-self: flex-start; /* 👈 aligns the button left under the text */
+  background-color: #b92e29;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.glass-button:hover {
+  background-color: #c55844;
+  transform: scale(1.05);
+}

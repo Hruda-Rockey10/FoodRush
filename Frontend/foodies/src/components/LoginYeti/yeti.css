@@ -1,0 +1,188 @@
+/* Fullscreen dark background */
+.yeti-login-container {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0a0a0a 40%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login form wrapper with glassmorphism */
+.yeti-form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 1.2rem;
+  padding: 2.5rem;
+  color: white;
+  width: 360px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+/* Form heading */
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #FFD700;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* SVG container */
+.svgContainer {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.mySVG {
+  width: 180px;
+  height: 180px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Input field groups */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  margin-bottom: 0.4rem;
+  color: #FFD700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.inputGroup input {
+  padding: 0.6rem 0.8rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.inputGroup input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Button group */
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn-signin,
+.btn-reset {
+  flex: 1;
+  padding: 0.65rem;
+  font-weight: bold;
+  border: 2px solid;
+  background: transparent;
+  transition: 0.3s ease;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-signin {
+  color: #FFD700;
+  border-color: #FFD700;
+}
+
+.btn-signin:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+.btn-reset {
+  color: red;
+  border-color: red;
+}
+
+.btn-reset:hover {
+  background: red;
+  color: #fff;
+}
+
+/* Bottom link message */
+.account-msg {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.account-msg a {
+  color: #FFD700;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.account-msg a:hover {
+  text-decoration: underline;
+}
+
+circle {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.eyeL circle, .eyeR circle {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+
+
+/* Yeti Head (circle) */
+.mySVG circle {
+  fill: #db7575; /* Deep red for the face */
+  stroke: #000; /* Black outline */
+  stroke-width: 3;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Eyes */
+.eyeL circle,
+.eyeR circle {
+  fill: #000; /* Black pupils */
+}
+
+/* Eyebrows */
+.brows rect {
+  fill: #000000; /* Changed to black */
+  transition: all 0.3s ease;
+}
+
+/* Mouth */
+.mouth path {
+  stroke: #000000; /* Changed to black */
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Cheeks (Blush) */
+circle[ref='cheekLRef'],
+circle[ref='cheekRRef'] {
+  fill: #FF6B81; /* Blush pink */
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform-origin: center;
+}
+
+/* Sunglasses */
+[ref='glassesRef'] rect {
+  fill: #000000;
+}
+
+[ref='glassesRef'] line {
+  stroke: #E63946; /* Red bridge line */
+  stroke-width: 2;
+}

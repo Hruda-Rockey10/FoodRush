@@ -1,0 +1,150 @@
+.food-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
+  padding: 1rem;
+  width: 280px;
+  margin: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+}
+
+.food-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.food-content {
+  padding: 16px;
+  color: #fff;
+}
+
+.food-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.food-description {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.food-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.food-price {
+  color: #ffd700;
+}
+
+.food-rating {
+  color: #e2725b;
+}
+
+.food-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-glass {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-glass:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.btn-glass.danger:hover {
+  background-color: #e2725b;
+  color: #fff;
+}
+
+.btn-glass.dark:hover {
+  background-color: #0f2347;
+  color: #fff;
+}
+
+
+
+
+
+.icon-button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #E2725B;
+}
+
+.icon-button i {
+  transition: color 0.3s ease;
+}
+
+.card-body .card-title.food-title {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.food-description {
+  font-size: 0.9rem;
+  color: #ffffff !important;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.rating-number {
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+.truncate-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toggle-desc-btn {
+  background: transparent;
+  border: none;
+  color: #ffd700;
+  font-size: 0.85rem;
+  padding: 0;
+  margin-top: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-desc-btn:hover {
+  text-decoration: underline;
+}
